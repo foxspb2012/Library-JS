@@ -20,6 +20,15 @@ const getRandomInteger = function (a = 0, b = 1) {
 };
 console.log("Запуск функции 'getRandomPositiveInteger'", getRandomInteger(1, 5));
 
+// Сгенерировать число в заданном интервале с "плавающей" запятой
+const getRandomPositiveFloat = function (a, b, digits = 1) {
+  const lower = Math.min(Math.abs(a), Math.abs(b));
+  const upper = Math.max(Math.abs(a), Math.abs(b));
+  const result = Math.random() * (upper - lower) + lower;
+  return Number(result.toFixed(digits));
+};
+console.log("Запуск функции 'getRandomPositiveFloat'", getRandomPositiveFloat(1, 5, 3));
+
 // Перемешать массив
 const shuffle = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
