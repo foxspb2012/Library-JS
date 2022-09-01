@@ -40,6 +40,11 @@ const shuffle = (array) => {
 };
 console.log("Запуск функции 'shuffle'", shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
+// Перемешать массив (вариант 2)
+const shuffle2 = (arr) => arr.sort(() => Math.random() - 0.5);
+console.log("Запуск функции 'shuffle2'", shuffle2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+
 // Сгенерировать случайную дату (два варианта)
 const generateDate = () => dayjs().add(getRandomInteger(-10, 10), 'day').format();
 const generateDateStart = (date) => dayjs(date).add(getRandomInteger(1,6), 'hour').format();
@@ -130,5 +135,10 @@ console.log("Запуск функции 'generateArray'", generateArray());
 // Получить случайное значение из массива
 const generateValue = () => categories[getRandomInteger(0, categories.length - 1)];
 console.log("Запуск функции 'generateValue'", generateValue());
+
+// Сгенерировать случайный цвет
+const generateRandomHexColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
+console.log("Запуск функции 'generateRandomHexColor'" ,generateRandomHexColor());
+
 
 
