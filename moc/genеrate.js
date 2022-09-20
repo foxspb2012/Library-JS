@@ -45,7 +45,7 @@ const shuffle2 = (arr) => arr.sort(() => Math.random() - 0.5);
 console.log("Запуск функции 'shuffle2'", shuffle2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
-// Сгенерировать случайную дату (два варианта)
+// Сгенерировать случайную дату (три варианта)
 const generateDate = () => dayjs().add(getRandomInteger(-10, 10), 'day').format();
 const generateDateStart = (date) => dayjs(date).add(getRandomInteger(1,6), 'hour').format();
 const generateDateTo = (dateStart) => dayjs(dateStart).add(getRandomInteger(10, 240), 'minute').format();
@@ -60,8 +60,15 @@ const createRandomDate = () => {
   return dayjs(createdDate).format(`YYYY.MM.DD, hh:mm:ss`);
 };
 
-console.log("Запуск функции 'createRandomDate'" , createRandomDate());
+const FIRST_WEEK_DAY = 1;
+const LAST_WEEK_DAY = 7;
+const createRandomDate2 = () => dayjs().subtract(getRandomInteger(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day').toISOString();
+
 console.log("Запуск функции 'generateDate'", generateDate());
+console.log("Запуск функции 'generateDateStart'", generateDateStart());
+console.log("Запуск функции 'generateDateTo'", generateDateTo());
+console.log("Запуск функции 'createRandomDate'" , createRandomDate());
+console.log("Запуск функции 'createRandomDate2'", createRandomDate2());
 
 
 // Сгенерировать объект
@@ -139,6 +146,19 @@ console.log("Запуск функции 'generateValue'", generateValue());
 // Сгенерировать случайный цвет
 const generateRandomHexColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
 console.log("Запуск функции 'generateRandomHexColor'" ,generateRandomHexColor());
+
+// Сгенерировать случайную строку заданной длины
+const getAlphaNumericRandom = (len= 1 ) => {
+  const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  let result = '';
+  let ifFirst = 0;
+  for(let i=0;i<len;i++){
+    if (i===0) {ifFirst = 10;} else {ifFirst = 0;}
+    result += characters[Math.round(Math.random()*(characters.length-ifFirst-1))];
+  }
+  return result;
+};
+console.log("Запуск функции 'getAlphaNumericRandom'" ,getAlphaNumericRandom(22));
 
 
 

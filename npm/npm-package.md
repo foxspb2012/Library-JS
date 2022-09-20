@@ -10,6 +10,7 @@
 *  [chalk - для оформления вывода в консоль](https://www.npmjs.com/package/chalk).
 * [inquirer - обработка пользовательского ввода при работе консольного приложения](https://www.npmjs.com/package/inquirer).
 * [commander - для работы с параметрами, передаваемыми приложению в командной строке](https://www.npmjs.com/package/commander).
+* [pino - для логирования](https://www.npmjs.com/package/pino).
 
 
 ### 3. Пакеты форнтенд-разработки
