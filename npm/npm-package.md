@@ -7,11 +7,15 @@
 
 
 ### 2. Node.js пакеты
-*  [chalk - для оформления вывода в консоль](https://www.npmjs.com/package/chalk).
-* [inquirer - обработка пользовательского ввода при работе консольного приложения](https://www.npmjs.com/package/inquirer).
-* [commander - для работы с параметрами, передаваемыми приложению в командной строке](https://www.npmjs.com/package/commander).
-* [pino - для логирования](https://www.npmjs.com/package/pino).
-
+* [chalk](https://www.npmjs.com/package/chalk) - для оформления вывода в консоль.
+* [inquirer](https://www.npmjs.com/package/inquirer) - обработка пользовательского ввода при работе консольного приложения.
+* [commander](https://www.npmjs.com/package/commander) - для работы с параметрами, передаваемыми приложению в командной строке.
+* [pino](https://www.npmjs.com/package/pino) - для логирования.
+* [pino-pretty](https://www.npmjs.com/package/pino-pretty) - для форматирования логов при выводе в консоль.
+* [got](https://www.npmjs.com/package/got) - удобная и мощная библиотека HTTP-запросов для Node.js.
+* [convict](https://www.npmjs.com/package/convict) - многофункциональная библиотека управления конфигурацией для Node.js (вложенная структура, проверка схемы и т. д.)(https://www.npmjs.com/package/convict). Должна использоваться с пакетом определения типов [@types/convict](https://www.npmjs.com/package/@types/convict).
+* [convict-format-with-validator](https://www.npmjs.com/package/convict-format-with-validator) - форматы 'email', 'ipaddress' и 'url' для [convict](https://www.npmjs.com/package/convict).
+* [@types/convict-format-with-validator](https://www.npmjs.com/package/@types/convict-format-with-validator) - пакет содержит определения типов для [convict-format-with-validator](https://www.npmjs.com/package/convict-format-with-validator)
 
 ### 3. Пакеты форнтенд-разработки
 * [dayjs - библиотека для работы с датами](https://www.npmjs.com/package/dayjs).
