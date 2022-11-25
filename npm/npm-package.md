@@ -16,8 +16,10 @@
 * [convict](https://www.npmjs.com/package/convict) - многофункциональная библиотека управления конфигурацией для Node.js (вложенная структура, проверка схемы и т. д.)(https://www.npmjs.com/package/convict). Должна использоваться с пакетом определения типов [@types/convict](https://www.npmjs.com/package/@types/convict).
 * [convict-format-with-validator](https://www.npmjs.com/package/convict-format-with-validator) - форматы 'email', 'ipaddress' и 'url' для [convict](https://www.npmjs.com/package/convict).
 * [@types/convict-format-with-validator](https://www.npmjs.com/package/@types/convict-format-with-validator) - пакет содержит определения типов для [convict-format-with-validator](https://www.npmjs.com/package/convict-format-with-validator)
+* [dotenv](https://www.npmjs.com/package/dotenv) - это модуль с нулевой зависимостью, который загружает переменные среды из .env файла в файлы process.env.
+* [nodemon](https://www.npmjs.com/package/nodemon) - это инструмент, который помогает разрабатывать приложения на основе Node.js, автоматически перезапуская приложение Node при обнаружении изменений файлов в каталоге.
 
-### 3. Пакеты форнтенд-разработки
+### 3. Пакеты фронтенд-разработки
 * [dayjs - библиотека для работы с датами](https://www.npmjs.com/package/dayjs).
 
 
