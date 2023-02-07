@@ -3,7 +3,7 @@
 ---
 
 ### 1. Универсальные пакеты
-*  [nanoid - генератор уникальных ID для JavaScript](https://www.npmjs.com/package/nanoid).
+*  [nanoid](https://www.npmjs.com/package/nanoid) - генератор уникальных ID для JavaScript.
 
 
 ### 2. Node.js пакеты
@@ -18,6 +18,8 @@
 * [@types/convict-format-with-validator](https://www.npmjs.com/package/@types/convict-format-with-validator) - пакет содержит определения типов для [convict-format-with-validator](https://www.npmjs.com/package/convict-format-with-validator)
 * [dotenv](https://www.npmjs.com/package/dotenv) - это модуль с нулевой зависимостью, который загружает переменные среды из .env файла в файлы process.env.
 * [nodemon](https://www.npmjs.com/package/nodemon) - это инструмент, который помогает разрабатывать приложения на основе Node.js, автоматически перезапуская приложение Node при обнаружении изменений файлов в каталоге.
+* [type-sync](https://www.npmjs.com/package/types-sync) - пакет для синхронизации типов с DefinitelyTyped - типы автоматической установки/удаления для зависимости после установки.
+* [joi](https://www.npmjs.com/package/joi) - библиотека для валидации данных на основе схемы.
 
 ### 3. Пакеты фронтенд-разработки
 * [dayjs - библиотека для работы с датами](https://www.npmjs.com/package/dayjs).
